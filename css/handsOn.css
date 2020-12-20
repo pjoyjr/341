@@ -1,0 +1,41 @@
+*{
+	margin:0 0 6px;
+}
+header{
+	text-align:left;
+	color:white;
+	background-color:#134;
+}
+body {
+	background-image: url("https://i.pinimg.com/474x/af/73/12/af73123434812b2e25e92723ad02da7f.jpg");
+	background-repeat: repeat;
+	background-position:center center;
+	overflow: hidden;
+}
+ 
+#wrap{
+	width:1260px;
+	margin: 0 auto;
+	padding: 3px 3px 3px 3px;
+}
+
+#fieldsetOne{
+	width:125px;
+	float:left;
+	margin-right:8px;
+}
+
+#oceans{
+	float:left;
+	width: 1000px;
+	height:500px;
+	margin:0px 0px;
+	padding:0px 0px;
+}
+
+#boat{
+	width: 250px;
+	height: 100px;
+	margin: 100px 0px 0px 100px;
+	padding:0px 0px;
+}

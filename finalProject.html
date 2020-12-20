@@ -1,0 +1,133 @@
+<!doctype html>
+<!--
+ Filename: finalProject.html
+ Written by: Paul Joy
+ Purpose: Create a form that prints the data from the form to an output area after is has been succesfully validated
+ Date: December 14, 2019
+ Original Build
+-->
+<html lang="en">
+<head>
+	<meta charset="utf-8">	
+	<title>Form Pulling</title>
+	<!-- CSS to define theme colors -->
+	<link href="theme/jquery-ui.css" rel="stylesheet" type="text/css">
+	<!-- CSS to define fonts -->
+	<link href="css/finalProject.css" rel="stylesheet" type="text/css">
+	<!-- CSS to define jquery -->
+	<link href="theme/external/jquery.css" rel="stylesheet" type="text/css">
+	
+	<!-- 
+	
+	Browser Testing:
+		Mobile Safari: Gender Values too close to radiobox...FIXED
+		Desktop Chrome: Form fills page nice, working tabs and validation
+		Desktop Brave: Form works and looks similar to chrome
+		
+	-->
+</head>
+<body>
+	<div id="headerLogo">
+		<img src="images/headerLogo.png" alt="logo">
+	</div>
+	<div id="tabs">
+		<ul>
+			<li><a href="#looking">Looking for a Dog Sitter?</a></li>
+			<li><a href="#looker">Want to be a Dog Sitter?</a></li>
+			<li><a href="#testimonies">Recent Testimonies</a></li>
+		</ul>
+		<div id="looking">
+			<h2>Fill out the form below to find a Dog Sitter!</h2><br>
+			<form id="form1">
+				<div class="row">
+					<div class="column">
+						<h3> Personal Info: </h3>
+						Gender:&nbsp;&nbsp;
+						<input type="radio" value="male" name="gender" id="male" checked autofocus> Male &nbsp;&nbsp;
+						<input type="radio" value="female" name ="gender" id="female"> Female<br><br>
+						Email: <br><input type="email" name ="email" id="emailAddress" required /><br><br>
+						Password: <br><input type="password" name = "password" id="password" required /><br><br>
+						First Name: <br><input type="text" id="firstName" name ="fName" required /><br><br>
+						Last Name: <br><input type="text" id="lastName" name="lName" required /><br><br>
+						Home Address: <br><input type="text" name="home" id="homeAddress" required /><br><br>
+						Telephone: <br><input type="tel" name="phone" id="phone" required /><br><br>
+					</div>
+					<div class="column">
+						<h3> Dog Info: </h3>
+						Breed of Dog:<br><input type="text" name="breed" id="autocomplete" required ><br><br>
+						Date of Sitter needed:<br><input id="datepicker" name="date" required ><br><br>
+						Size of Dog:<br>
+						<select id="dogSize">
+							<option value="smallDog">2 to 22 lbs</option>
+							<option value="mediumDog">23 to 57 lbs</option>
+							<option value="largeDog">58 to 99 lbs</option>
+							<option value="xLargeDog">100+ lbs</option>
+						</select><br><br>
+						Interested in:<br><br>
+						<input type="checkbox" name="interests" value="Boarding">Boarding<br><br>
+						<input type="checkbox" name="interests" value="Dog Sitter">Dog Sitter<br><br>
+						<input type="checkbox" name="interests" value="Walking">Walking<br><br>
+						<input type="checkbox" name="interests" value="Training">Training <br><br>
+						<input type="submit" id="signup" class="ui-button ui-corner-all ui-widget">
+						<input type="reset" class="ui-button ui-corner-all ui-widget">
+					</div>
+				</div>
+				<h2>OutputData</h2>
+				<p id="outputData1"></p>
+			</form>
+		</div> <!-- End of looker div -->
+		<div id="looker">
+			<h2>Fill out the form below to become a Dog Sitter!</h2>
+			<form id="form2">
+				<div class="row">
+					<div class="column">
+						Gender:&nbsp;&nbsp;
+						<input type="radio" value="male" name="gender2" id="male2" checked> Male &nbsp;&nbsp;
+						<input type="radio" value="female" name="gender2" id="female2"> Female<br><br>
+						Email: <br><input type="email" name="email2" id="emailAddress2" required /><br><br>
+						Password:<br><input type="password" name="password2" id="password2" required /><br><br>
+						First Name:<br><input type="text" name="fName2" id="firstName2" required /><br><br>
+						Last Name:<br><input type="text" name="lName2" id="lastName2" required /><br><br>
+					</div>
+					<div class="column"><br><br>
+						Home Address:<br><input type="text" name="home2" id="homeAddress2" required /><br><br>
+						Telephone:<br><input type="tel" name="phone2" id="phone2" required /><br><br>
+						How many dogs can you watch at once:<br><input id="spinner" name="dogsCount" value="1" READONLY><br><br>
+						<input type="submit" id="signUpSitter" class="ui-button ui-corner-all ui-widget">
+						<input type="reset" class="ui-button ui-corner-all ui-widget">
+					</div>
+				</div>
+			</form>
+			<h2>OutputData2</h2>
+			<p id="outputData2"></p>
+		</div> <!-- End of looker div -->
+		<div id="testimonies">
+			<div id="accordion">
+			<h2>Testimony 1</h2>
+				<div>
+				Nam dui erat, auctor a, dignissim quis, sollicitudin eu, felis. Pellentesque nisi urna, interdum eget, sagittis et,
+				consequat vestibulum, lacus. Mauris porttitor ullamcorper augue.
+				</div>
+			<h2>Testimony 2</h2>
+				<div>
+				Nam dui erat, auctor a, dignissim quis, sollicitudin eu, felis. Pellentesque nisi urna, interdum eget, sagittis et,
+				consequat vestibulum, lacus. Mauris porttitor ullamcorper augue.
+				</div>
+			<h2>Testimony 3</h2>
+				<div>
+				Nam dui erat, auctor a, dignissim quis, sollicitudin eu, felis. Pellentesque nisi urna, interdum eget, sagittis et,
+				consequat vestibulum, lacus. Mauris porttitor ullamcorper augue.
+				</div>
+			</div>
+		</div> <!-- End of testimonies div -->
+	</div> <!-- End of tabs div-->
+
+<!-- jQuery UI functionality -->	
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="theme/external/jquery/jquery.js"></script>
+<script src="theme/jquery-ui.js"></script>	
+<script src="js/jquery.validate.js"></script>	
+
+<script src="js/finalProject.js"></script>
+</body>
+</html>

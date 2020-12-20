@@ -1,0 +1,20 @@
+/**************************************
+ Filename: pirate.css
+ Author: Paul Joy
+ Create Date: September 3, 2019
+ Purpose: Provide colors for simple.html
+ Modification History:
+ No Modifications
+**************************************/
+
+body {
+	background-color: #ACE1F2;			/* light blue */
+}
+
+#oneFoot {
+	color: purple;
+}
+
+#oneEye {
+	color: orange;
+}

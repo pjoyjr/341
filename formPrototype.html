@@ -1,0 +1,120 @@
+<!doctype html>
+<!--
+ Filename: FormPrototype.html
+ Written by: Paul Joy
+ Purpose: Create a form that prints hello world to an output area when submit is clicked
+ Date: November 22, 2019
+ Original Build
+-->
+<html lang="en">
+<head>
+	<meta charset="utf-8">	
+	<title>Form Pulling</title>
+	<!-- CSS to define theme colors -->
+	<link href="theme/jquery-ui.css" rel="stylesheet" type="text/css">
+	<!-- CSS to define fonts -->
+	<link href="css/formPrototype.css" rel="stylesheet" type="text/css">
+	<!-- CSS to define jquery -->
+	<link href="theme/external/jquery.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+	<div id="headerLogo">
+		<img src="images/headerLogo.png" alt="logo">
+	</div>
+	<div id="tabs">
+		<ul>
+			<li><a href="#looking">Looking for a Dog Sitter?</a></li>
+			<li><a href="#looker">Want to be a Dog Sitter?</a></li>
+			<li><a href="#testimonies">Recent Testimonies</a></li>
+		</ul>
+		<div id="looking">
+			<h2>Fill out the form below to find a Dog Sitter!</h2>
+			<form>
+				<div id="accordion">
+					<h2>Personal Information</h2>
+					<div>
+						<p>Gender:<br><br>
+						<input type="radio" value="male" name="gender" id="male" checked autofocus>Male &nbsp;&nbsp;
+						<input type="radio" value="female" name ="gender" id="female">Female<br>
+						</p>
+						First Name:<br><input type="text" id="firstName" required /><br><br>
+						Last Name:<br><input type="text" id="lastName"/><br><br>
+						Home Address:<br><input type="text" id="homeAddress"/><br><br>
+						Telephone:<br><input type="tel" id="phone"/><br><br>
+						Email:<br><input type="email" id="emailAddress"/><br><br>
+						Password:<br><input type="password" id="password"/><br>	
+					</div>
+					<h2>Dog Information</h2>			
+					<div>
+						Breed of Dog:<br><input type="text" id="autocomplete"><br><br>
+						Date of Sitter needed:<br><input type="date" id="dateNeeded" name="day"><br><br>
+						Size of Dog:<br>
+						<select id="dogSize">
+							<option value="smallDog">2 to 22 lbs</option>
+							<option value="mediumDog">23 to 57 lbs</option>
+							<option value="largeDog">58 to 99 lbs</option>
+							<option value="xLargeDog">100+ lbs</option>
+						</select><br><br>
+						Interested in:<br>
+					    <input name="interests" type="checkbox" value="boarding">Boarding<br>
+					    <input name="interests" type="checkbox" value="dogSitter">Dog Sitter <br>
+					    <input name="interests" type="checkbox" value="walking">Walking<br>
+					    <input name="interests" type="checkbox" value="training">Training <br><br>
+						
+						<button type="button" id="signup" class="ui-button ui-corner-all ui-widget">
+						<span class="ui-icon ui-icon-circlesmall-plus"></span>Sign Up</button>
+						<button type="reset" class="ui-button ui-corner-all ui-widget">
+						<span class="ui-icon ui-icon-circlesmall-close"></span>Reset</button>
+					</div>
+					<h2>OutputData</h2>
+					<div>
+					<p id="outputData1"></p>
+					</div>
+				</div><!--end of accordion-->
+			</form>
+		</div>
+		<div id="looker">
+			<h2>Fill out the form below to become a Dog Sitter!</h2>
+			<form>
+				<p>How many dogs can you watch at once:<br><input id="spinner"></p>
+				<p>Gender:<br><br>
+				<input type="radio" value="male" name="gender2" id="male2" checked>Male &nbsp;&nbsp;
+				<input type="radio" value="female" name="gender2" id="female2">Female<br>
+				</p>
+				First Name:<br><input type="text" id="firstName2"/><br><br>
+				Last Name:<br><input type="text" id="lastName2"/><br><br>
+				Home Address:<br><input type="text" id="homeAddress2"/><br><br>
+				Telephone:<br><input type="tel" id="phone2"/><br><br>
+				Email:<br><input type="email" id="emailAddress2"/><br><br>
+				Password:<br><input type="password" id="password2"/><br><br>
+				<button type="button" id="signUpSitter" class="ui-button ui-corner-all ui-widget">
+				<span class="ui-icon ui-icon-circlesmall-plus"></span>Sign Up</button>
+				<button type="reset" class="ui-button ui-corner-all ui-widget">
+				<span class="ui-icon ui-icon-circlesmall-close"></span>Reset</button>
+			</form>
+			<h2>OutputData2</h2>
+			<p id="outputData2"></p>
+		</div>
+		<div id="testimonies">
+			<p>
+			Nam dui erat, auctor a, dignissim quis, sollicitudin eu, felis. Pellentesque nisi urna, interdum eget, sagittis et,
+			consequat vestibulum, lacus. Mauris porttitor ullamcorper augue.
+			</p>
+			<p>
+			Nam dui erat, auctor a, dignissim quis, sollicitudin eu, felis. Pellentesque nisi urna, interdum eget, sagittis et,
+			consequat vestibulum, lacus. Mauris porttitor ullamcorper augue.
+			</p>
+			<p>
+			Nam dui erat, auctor a, dignissim quis, sollicitudin eu, felis. Pellentesque nisi urna, interdum eget, sagittis et,
+			consequat vestibulum, lacus. Mauris porttitor ullamcorper augue.
+			</p>
+		</div>
+	</div> <!-- End of tabs div-->
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="theme/external/jquery/jquery.js"></script>
+	<!-- jQuery UI functionality -->
+	<script src="theme/jquery-ui.js"></script>	
+	<script src="js/formPrototype.js"></script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!doctype html>
+<!--
+    Filename: pickMe.html
+    Written by: Paul Joy
+    Purpose:  jQuery button registration with named functions
+    Date: 11/1/2012
+    Modification History: N/A
+-->
+
+
+<html lang="en">
+    <head>
+    
+        <title>jQuery Selection by Element Tag</title>
+        <meta charset="utf-8">
+        <!-- Link to some stylesheet goes first -->
+        <link href="../css/myFavoriteStyle.css" rel="stylesheet">
+		<!-- Link to hosted jQuery library goes after css file but before local js file -->
+        <!-- Probable performance boost if at very bottom of file -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+        <!-- Link to js file specific to this html page goes below hosted library link -->
+        <script src="js/pickMe.js"></script>
+    </head>
+    
+    <body>
+		<button id="btn1">Color SignUp text</button>
+		<button id="btn2">Show eligible</button>
+		<button id="btn3">Select Captain (bold)</button>
+		<button id="btn4">Drop Noobs</button>
+		<button id="btn5">Border Applicants</button>
+		<button id="btn6">Split Teams</button>
+		<button id="btn7">Select Warrior</button>
+		<p>Sign up list for pirating 101</p>
+		<ul>
+			<li id = "Frank" class="alive">Sir Frank Scheming</li>
+			<li id = "Bill" class="alive">Large Bill</li>
+			<li id = "Zlatan" class="dead">Greedy Zlatan</li>
+			<li id = "Ryan" class="alive">Ryan The Feared</li>
+			<li id = "Emilila" class="alive">Emilia Plank</li>
+			<li id = "Jakob" class="dead">Jakob Blondebeard</li>
+			<li id = "Pete" class="alive">Pete Greyhate</li>
+			<li id = "Dread" class="dead">Cap'n Dreadful</li>
+			<li id = "John" class="alive">John Largeparrot</li>
+			<li id = "Jake" class="alive">Captain Jake</li>
+			<li id = "Jon" class="alive">Admiral Jon</li>
+			<li id = "Leon" class="dead">Sir Leon Long</li>
+		</ul>
+		<div id = "output"></div>
+    </body>
+
+</html>
