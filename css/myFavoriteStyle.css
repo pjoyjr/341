@@ -5,7 +5,7 @@ header{
 	text-align:left;
 	color:white;
 	background-color:#134;
-	padding:30px 150px;
+	padding:30px 75px;
 }
 body {
 	background-color: #5900b3;	/*	Use the Color Picker to find the hex code of your favorite color
@@ -37,7 +37,7 @@ h3{
 }
 
 #assignments{			/* Define the formatting for the <div id="asssignments"> box */
-	width: 720px;
+	width: 360px;
 	margin: 0 auto;
 	box-shadow: 0 2px 15px #EEE;
 	min-height: 400px;
